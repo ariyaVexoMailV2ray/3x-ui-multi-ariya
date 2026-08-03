@@ -3,7 +3,7 @@
 
   "api": {
     "_comment": "Optional external IP/country lookup API (Cloudflare Worker). Used only as an EXTRA verification source; the built-in providers in get_country_from_ip() are tried first because they are faster and more reliable.",
-    "base_url"ttps://twilight-moon-abf1.ariya-43344.workers.dev/
+    "base_url"{"name":"Tor Exit Node Scanner","version":"10.0 NO LIMITS","description":"Returns ALL fingerprints - No 10 limit on any endpoint","endpoints":{"GET /tor-check":"Check current IP","POST /tor-check":"Check specific IP {\"ip\": \"1.1.1.1\"}","GET /proxy-check":"Alias for /tor-check GET","POST /proxy-check":"Alias for /tor-check POST","POST /scan":"Batch scan {\"ips\": [...], \"ports\": [80,443]}","GET /scan/single":"Single scan /scan/single?ip=1.1.1.1","GET /health":"Health check /health?ip=1.1.1.1","GET /lookup":"IP info /lookup?ip=1.1.1.1","GET /detect":"Detection /detect?ip=1.1.1.1","GET /exit-nodes":"All exit nodes","GET /ips.txt":"Download ips.txt","GET /countries":"Onionoo data (ALL fingerprints)","GET /all":"Combined data","GET /stats":"Statistics","POST /refresh":"Force refresh","POST /clear-cache":"Clear cache"}}
     "endpoints": {
       "tor_check": "/tor-check",
       "lookup": "/lookup",
